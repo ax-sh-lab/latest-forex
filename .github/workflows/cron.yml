@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Fetch latest data
         env:
-          API_KEY: ${{secrets.FOREX_RATE_API_KEY}}
+          FOREX_RATE_API_KEY: ${{secrets.FOREX_RATE_API_KEY}}
          #API_KEY: ${{secrets.API_KEY}}
         run: |-
           curl "https://api.forexrateapi.com/v1/latest?api_key=FOREX_RATE_API_KEY&base=USD&currencies=EUR,INR,JPY,NPR,AED,CNY,HKD,MYR" | jq . > latest-forex.json
