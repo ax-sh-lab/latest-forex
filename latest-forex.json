@@ -1,7 +1,15 @@
 {
-	"success": false,
-	"error": {
-		"statusCode": 102,
-		"message": "User did not supply an access key or supplied an invalid access key. Please sign up for a FREE API Key at forexrateapi.com"
-	}
+  "success": true,
+  "base": "USD",
+  "timestamp": 1723075199,
+  "rates": {
+    "AED": 3.6730005,
+    "CNY": 7.156802,
+    "EUR": 0.915225564,
+    "HKD": 7.794785,
+    "INR": 83.93775,
+    "JPY": 145.021022,
+    "MYR": 4.4725,
+    "NPR": 134.3632325
+  }
 }
