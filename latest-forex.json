@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "error": {
+    "statusCode": 102,
+    "message": "User did not supply an access key or supplied an invalid access key. Please sign up for a FREE API Key at forexrateapi.com"
+  }
+}
