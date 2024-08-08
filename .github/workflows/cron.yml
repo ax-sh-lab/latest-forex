@@ -9,6 +9,10 @@ on:
 jobs:
   scheduled:
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     steps:
       - name: Check out this repo
         uses: actions/checkout@v2
@@ -19,11 +23,11 @@ jobs:
         run: |-
           curl "https://api.forexrateapi.com/v1/latest?api_key=FOREX_RATE_API_KEY&base=USD&currencies=EUR,INR,JPY,NPR,AED,CNY,HKD,MYR" | jq . > latest-forex.json
 #          curl "http://data.fixer.io/api/latest?access_key=$API_KEY" | jq . > latest-forex.json
-#      - name: Commit and push if it changed
-#        run: |-
-#          git config user.name "Automated"
-#          git config user.email "actions@users.noreply.github.com"
-#          git add -A
-#          timestamp=$(date -u)
-#          git commit -m "Latest data: ${timestamp}" || exit 0
-#          git push
+      - name: Commit and push if it changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
