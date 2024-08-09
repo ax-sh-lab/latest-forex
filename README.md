@@ -1,7 +1,7 @@
 
-# Fixer API for free.
+# Fixer API cache
 
-[//]: # https://forexrateapi.com/currencies
+`https://forexrateapi.com/currencies`
 
 - 100 API Calls / mo
 
