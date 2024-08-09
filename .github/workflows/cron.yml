@@ -15,7 +15,7 @@ jobs:
       contents: write
     steps:
       - name: Check out this repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Fetch latest data
         env:
           FOREX_RATE_API_KEY: ${{secrets.FOREX_RATE_API_KEY}}
