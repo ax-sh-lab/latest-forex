@@ -21,7 +21,7 @@ jobs:
           FOREX_RATE_API_KEY: ${{secrets.FOREX_RATE_API_KEY}}
          #API_KEY: ${{secrets.API_KEY}}
         run: |-
-          curl "https://api.forexrateapi.com/v1/latest?api_key=$FOREX_RATE_API_KEY&base=USD&currencies=EUR,INR,JPY,NPR,AED,CNY,HKD,MYR" | jq . > latest-forex.json
+          curl "https://api.forexrateapi.com/v1/latest?api_key=$FOREX_RATE_API_KEY&base=USD&currencies=EUR,INR,JPY,NPR,AED,CNY,HKD,MYR,AUD,GBP,USD,BTC" | jq . > latest-forex.json
 #          curl "http://data.fixer.io/api/latest?access_key=$API_KEY" | jq . > latest-forex.json
       - name: Commit and push if it changed
         run: |-
