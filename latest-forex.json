@@ -1,7 +1,19 @@
 {
-  "success": false,
-  "error": {
-    "statusCode": 105,
-    "message": "User has reached or exceeded the monthly API request allowance for their subscription plan. Please visit https://forexrateapi.com to upgrade your plan."
+  "success": true,
+  "base": "USD",
+  "timestamp": 1766447999,
+  "rates": {
+    "AED": 3.6725,
+    "AUD": 1.5103287634,
+    "BTC": 0.0000112385,
+    "CNY": 7.0407660353,
+    "EUR": 0.8534862782,
+    "GBP": 0.746681003,
+    "HKD": 7.7812478017,
+    "INR": 89.5774,
+    "JPY": 157.4634174974,
+    "MYR": 4.08,
+    "NPR": 143.372,
+    "USD": 1
   }
 }
